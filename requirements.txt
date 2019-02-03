@@ -5,3 +5,5 @@ Markdown==3.0.1
 django-filter==2.1.0
 django-crispy-forms==1.7.2
 django-guardian==1.4.9
+pytest==4.2.0
+pytest-django==3.4.7
