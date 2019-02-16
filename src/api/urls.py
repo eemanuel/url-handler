@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from apps.user_profile import api_views
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('user-profile-list/', api_views.UserProfileListAPIView.as_view(), name='user_profile_list'),
+    path('user-profile-create/', api_views.UserProfileCreateAPIView.as_view(), name='user_profile_create'),
 ]
